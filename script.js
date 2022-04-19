@@ -1,41 +1,51 @@
-var images = document.getElementsByClassName('imageReview');
-var carouselWrapper = document.getElementById('carousel-wrapper');
-var selected = 3;
-var i;
-var l;
+$(document).ready(function(){
+    $('.review-wrapper').slick({
+      centerMode: true,
+      centerPadding: '60px',
+      slidesToShow: 3,
+      // autoplay: true,
+      arrows: false,
+      dots: false,
+      pauseOnHover: true,
+      autoplaySpeed: 2500,
+      responsive: [
+        {
+          breakpoint: 768,
+          settings: {
+            arrows: false,
+            centerMode: true,
+            centerPadding: '40px',
+            slidesToShow: 1
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            arrows: false,
+            centerMode: true,
+            centerPadding: '40px',
+            slidesToShow: 1
+          }
+        }
+      ]
+    });
+});
 
-for(i = 0, l = images.length; i < l; i++) {
-  
-  images[i].addEventListener('click', function(e){
-    
-    var imageId = e.target.id;
-    var imageNum = imageId.split('-')[1];
-    var difference = imageNum - selected;
-    var position = parseInt(document.defaultView.getComputedStyle(carouselWrapper).marginLeft);
-    
-    carouselWrapper.style.marginLeft = position - (difference * 350) + 'px';
-    selected = imageNum;
-    
-  }); 
-}
-
-var imagesCarpark = document.getElementsByClassName('carpark');
-var carparkWrapper = document.getElementById('carpark-wrapper');
-var selectedCarpark = 2;
-var y;
-var z;
-
-for(y = 0, z = imagesCarpark.length; y < z; y++) {
-  
-  imagesCarpark[y].addEventListener('click', function(e){
-    
-    var imageId = e.target.id;
-    var imageNum = imageId.split('-')[1];
-    var difference = imageNum - selectedCarpark;
-    var position = parseInt(document.defaultView.getComputedStyle(carparkWrapper).marginLeft);
-    
-    carparkWrapper.style.marginLeft = position - (difference * 350) + 'px';
-    selectedCarpark = imageNum;
-    
-  }); 
-}
+$(document).ready(function() {
+  $(document).on("scroll", onScroll);
+  function onScroll(event){
+    var scrollPos = $(document).scrollTop() + 500;
+    $('a[href*=\\#]:not([href=\\#])').each(function () {
+        var currLink = $(this);
+        var refElement = $(currLink.attr("href"));
+        if (refElement.length) {
+          if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
+              currLink.parents('.nav-item').addClass("active");
+          }
+          else{
+              currLink.parents('.nav-item').removeClass("active");
+          }
+        }
+      });
+    }
+})
