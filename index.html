@@ -16,18 +16,18 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-blue p-0">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-blue p-0 fixed-top">
       <div class="container-fluid p-0">
-        <a class="navbar-brand bg-white" href="#"><img src="images/logo.png" alt="RubJumNum logo" height="50"></a>
+        <a class="navbar-brand bg-white" href="#banner"><img src="images/logo.png" alt="RubJumNum logo" height="50"></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse me-5" id="navbarNav">
+        <div class="collapse navbar-collapse me-lg-5" id="navbarNav">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
               <a class="nav-link" href="#about">เกี่ยวกับเรา</a>
             </li>
-            <li class="nav-item active">
+            <li class="nav-item">
               <a class="nav-link" href="#condition">เงื่อนไขการให้บริการ</a>
             </li>
             <li class="nav-item">
@@ -36,17 +36,23 @@
             <li class="nav-item">
               <a class="nav-link" href="#contactUs">ติดต่อเรา</a>
             </li>
-            <li class="nav-item active nav-item-phone">
+            <li class="nav-item-phone display">
               <a class="nav-link" href="tel:093-442-6818"><img src="images/phone.svg" alt="RubJumNum-phone-icon"></a>
             </li>
-            <li class="nav-item active nav-item-line">
+            <li class="nav-item-line display">
               <a class="nav-link" href="https://line.me" target="_blank"><img src="images/line.svg" alt="RubJumNum-line-icon"></a>
+            </li>
+            <li class="nav-item-line displayMobile">
+              <a class="nav-link float-start" href="tel:093-442-6818"><img src="images/phone.svg" alt="RubJumNum-phone-icon"></a>
+              <a class="nav-link float-start ms-3" href="https://line.me" target="_blank"><img src="images/line.svg" alt="RubJumNum-line-icon"></a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
-    <img src="images/banner.png" alt="RubJumNum banner" class="img-fluid">
+    <div class="text-center">
+      <img src="images/banner.png" alt="RubJumNum banner" id="banner" class="img-fluid" style="margin-top: 60px;">
+    </div>
     <div class="container text-center">
       <div class="row p-4" id="about">
         <h2 class="m-4">เกี่ยวกับเรา</h2>
@@ -73,7 +79,36 @@
         </p>
         <hr class="mt-4">
         <h2 class="m-4">เอกสารที่ต้องใช้</h2>
-        <img src="images/DocumentType.png">
+        <div class="row mb-1">
+          <h3 class="col pe-0">
+            <div class="th p-3">
+              รถมีเล่มทะเบียน
+            </div>
+          </h3>
+          <h3 class="col">
+            <div class="th p-3">
+              รถติดไฟแนนซ์
+            </div>
+          </h3>
+        </div>
+        <div class="row">
+          <div class="col pe-0">
+            <div class="tb p-3">
+              <h5 class="mb-4"><img src="images/circle-check-r.png" class="iconCheck"> เล่มทะเบียนรถ</h5>
+              <h5 class="mb-4"><img src="images/circle-check-r.png" class="iconCheck"> บัตรประชาชน</h5>
+              <h5 class="mb-4"><img src="images/circle-check-r.png" class="iconCheck"> ทะเบียนบ้าน</h5>
+            </div>
+          </div>
+          <div class="col">
+            <div class="tb p-3">
+              <h5 class="mb-4"><img src="images/circle-check-b.png" class="iconCheck"> สัญญาเช่าซื้อที่ทำไว้กับไฟแนนซ์</h5>
+              <h5 class="mb-4"><img src="images/circle-check-b.png" class="iconCheck"> ใบเสร็จค่างวดล่าสุด</h5>
+              <h5 class="mb-4"><img src="images/circle-check-b.png" class="iconCheck"> สำเนาทะเบียนรถ</h5>
+              <h5 class="mb-4"><img src="images/circle-check-b.png" class="iconCheck"> บัตรประชาชน</h5>
+              <h5 class="mb-4"><img src="images/circle-check-b.png" class="iconCheck"> ทะเบียนบ้าน</h5>
+            </div>
+          </div>
+        </div>
         <p>
           ผ่อนไฟแนนซ์อยู่หรือผ่อนไม่ไหวค้างชำระหลายงวด ก็สามารถจำนำได้เช่นกัน อนุมัตไวรับเงินสดทันทีภายใน 10 นาที เรารับจำนำรถ รถเก่ารถใหม่ป้ายแดง เรารับจำนำหมด เพราะเราเป็นรายใหญ่ที่สุดในประเทศ (ไม่ใช่นายหน้า) เราจึงให้วงเงินจำนำรถของท่านได้สูงที่สุด และดอกเบี้ยแสนต่ำ ท่านนำรถมาจำนำกับเราสบายใจได้ เพราะเราดูแลรถท่านเป็นอย่างดี ไม่นำรถของท่านไปใช้งาน การันตีด้วยลูกค้าที่มาจำนำรถกับเราเป็นจำนวนมาก เราเปิดบริการทุกวันไม่เว้นวันหยุด
         </p>
@@ -89,70 +124,138 @@
         <p>
           ขอบคุณลูกค้าทุกท่าน ที่ให้ความไว้วางใจใช้บริการจำนำรถกับทางเรา
         </p>
-        <div class="col-md-3 col-6 mt-3">
+        <div class="col-md-3 col-12 mt-3 img-slide" data-bs-toggle="modal" data-bs-target="#customer1">
           <img src="images/customer1.png" class="img-fluid" alt="RubJumNum-customer">
         </div>
-        <div class="col-md-3 col-6 mt-3">
+        <!-- Modal -->
+        <div class="modal fade" id="customer1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content p-2">
+              <button type="button" class="btn-close close-left" data-bs-dismiss="modal" aria-label="Close"></button>
+              <img src="images/customer1.png" class="img-fluid" alt="RubJumNum-customer">
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 col-12 mt-3 img-slide" data-bs-toggle="modal" data-bs-target="#customer2">
           <img src="images/customer2.png" class="img-fluid" alt="RubJumNum-customer">
         </div>
-        <div class="col-md-3 col-6 mt-3">
+        <!-- Modal -->
+        <div class="modal fade" id="customer2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content p-2">
+              <button type="button" class="btn-close close-left" data-bs-dismiss="modal" aria-label="Close"></button>
+              <img src="images/customer2.png" class="img-fluid" alt="RubJumNum-customer">
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 col-12 mt-3 img-slide" data-bs-toggle="modal" data-bs-target="#customer3">
           <img src="images/customer3.png" class="img-fluid" alt="RubJumNum-customer">
         </div>
-        <div class="col-md-3 col-6 mt-3">
+        <!-- Modal -->
+        <div class="modal fade" id="customer3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content p-2">
+              <button type="button" class="btn-close close-left" data-bs-dismiss="modal" aria-label="Close"></button>
+              <img src="images/customer3.png" class="img-fluid" alt="RubJumNum-customer">
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 col-12 mt-3 img-slide" data-bs-toggle="modal" data-bs-target="#customer4">
           <img src="images/customer4.png" class="img-fluid" alt="RubJumNum-customer">
         </div>
-        <div class="col-md-3 col-6 mt-3">
+        <!-- Modal -->
+        <div class="modal fade" id="customer4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content p-2">
+              <button type="button" class="btn-close close-left" data-bs-dismiss="modal" aria-label="Close"></button>
+              <img src="images/customer4.png" class="img-fluid" alt="RubJumNum-customer">
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 col-12 mt-3 img-slide" data-bs-toggle="modal" data-bs-target="#customer5">
           <img src="images/customer5.png" class="img-fluid" alt="RubJumNum-customer">
         </div>
-        <div class="col-md-3 col-6 mt-3">
+        <!-- Modal -->
+        <div class="modal fade" id="customer5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content p-2">
+              <button type="button" class="btn-close close-left" data-bs-dismiss="modal" aria-label="Close"></button>
+              <img src="images/customer5.png" class="img-fluid" alt="RubJumNum-customer">
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 col-12 mt-3 img-slide" data-bs-toggle="modal" data-bs-target="#customer6">
           <img src="images/customer6.png" class="img-fluid" alt="RubJumNum-customer">
         </div>
-        <div class="col-md-3 col-6 mt-3">
+        <!-- Modal -->
+        <div class="modal fade" id="customer6" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content p-2">
+              <button type="button" class="btn-close close-left" data-bs-dismiss="modal" aria-label="Close"></button>
+              <img src="images/customer6.png" class="img-fluid" alt="RubJumNum-customer">
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 col-12 mt-3 img-slide" data-bs-toggle="modal" data-bs-target="#customer7">
           <img src="images/customer7.png" class="img-fluid" alt="RubJumNum-customer">
         </div>
-        <div class="col-md-3 col-6 mt-3">
+        <!-- Modal -->
+        <div class="modal fade" id="customer7" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content p-2">
+              <button type="button" class="btn-close close-left" data-bs-dismiss="modal" aria-label="Close"></button>
+              <img src="images/customer7.png" class="img-fluid" alt="RubJumNum-customer">
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 col-12 mt-3 img-slide" data-bs-toggle="modal" data-bs-target="#customer8">
           <img src="images/customer8.png" class="img-fluid" alt="RubJumNum-customer">
+        </div>
+        <!-- Modal -->
+        <div class="modal fade" id="customer8" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content p-2">
+              <button type="button" class="btn-close close-left" data-bs-dismiss="modal" aria-label="Close"></button>
+              <img src="images/customer8.png" class="img-fluid" alt="RubJumNum-customer">
+            </div>
+          </div>
         </div>
 
         <hr class="mt-4">
         <h2 class="m-4">รีวิวจากลูกค้าของเรา</h2>
-        <div class="carousel-review">
-          <section id='carousel-wrapper'>
-            <!--images-->
-            <a href='#imageReview-1' id='imageReview-1' class='imageReview'>
-              <img src="images/review1.png" class="img-fluid" alt="RubJumNum-review">
-            </a>
-            <a href='#imageReview-2' id='imageReview-2' class='imageReview'>
-              <img src="images/review2.png" class="img-fluid" alt="RubJumNum-review">
-            </a>
-            <a href='#imageReview-3' id='imageReview-3' class='imageReview'>
-              <img src="images/review3.png" class="img-fluid" alt="RubJumNum-review">
-            </a>
-            <a href='#imageReview-4' id='imageReview-4' class='imageReview'>
-              <img src="images/review4.png" class="img-fluid" alt="RubJumNum-review">
-            </a>
-            <a href='#imageReview-5' id='imageReview-5' class='imageReview'>
-              <img src="images/review5.png" class="img-fluid" alt="RubJumNum-review">
-            </a>
-          </section>
-        </div>
+
+        <section class="review-wrapper p-md-4">
+          <img src="images/review1.png" class="img-fluid img-slide p-1" alt="RubJumNum-review">
+          <img src="images/review2.png" class="img-fluid img-slide p-1" alt="RubJumNum-review">
+          <img src="images/review3.png" class="img-fluid img-slide p-1" alt="RubJumNum-review">
+          <img src="images/review4.png" class="img-fluid img-slide p-1" alt="RubJumNum-review">
+          <img src="images/review5.png" class="img-fluid img-slide p-1" alt="RubJumNum-review">
+          <img src="images/review6.png" class="img-fluid img-slide p-1" alt="RubJumNum-review">
+        </section>
 
         <hr class="mt-4">
         <h2 class="m-4">ที่จอดของเรา</h2>
-        <div class="carousel-carpark">
-          <section id='carpark-wrapper'>
-            <!--images-->
-            <a href='#carpark-1' id='carpark-1' class='carpark'>
-              <img src="images/carpark1.png" class="img-fluid" alt="RubJumNum-review">
-            </a>
-            <a href='#carpark-2' id='carpark-2' class='carpark'>
-              <img src="images/carpark2.png" class="img-fluid" alt="RubJumNum-review">
-            </a>
-            <a href='#carpark-3' id='carpark-3' class='carpark'>
-              <img src="images/carpark1.png" class="img-fluid" alt="RubJumNum-review">
-            </a>
-          </section>
-        </div>
+        <section class="review-wrapper p-md-4">
+          <div class="parallelogram-wrapper">
+            <img src="images/carpark1.png" class="img-fluid img-slide" alt="RubJumNum-carpark">
+          </div>
+          <div class="parallelogram-wrapper">
+            <img src="images/carpark2.png" class="img-fluid img-slide" alt="RubJumNum-carpark">
+          </div>
+          <div class="parallelogram-wrapper">
+            <img src="images/carpark3.png" class="img-fluid img-slide" alt="RubJumNum-carpark">
+          </div>
+          <div class="parallelogram-wrapper">
+            <img src="images/carpark4.png" class="img-fluid img-slide" alt="RubJumNum-carpark">
+          </div>
+        </section>
       </div>
       <div class="row p-4" id="contactUs">
         <hr>
@@ -172,9 +275,10 @@
         </div>
       </div>
     </div>
-    <footer class="text-center mt-4">© Copyrights 2021 รับจำนำรถทุกรุ่น.com</footer>
-
+    <footer class="text-center mt-5">© Copyrights 2021 รับจำนำรถทุกรุ่น.com</footer>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
     <script  src="./script.js"></script>
+    <script type="text/javascript" src="./slick/slick.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
   </body>
 </html>
