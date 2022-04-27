@@ -54,6 +54,7 @@
     </nav>
     <div class="text-center">
       <img src="images/banner.png" alt="RubJumNum banner" id="banner" class="img-fluid" style="margin-top: 60px;">
+      
     </div>
     <div class="container text-center">
       <div class="row p-4" id="about">
@@ -81,34 +82,30 @@
         </p>
         <hr class="mt-4">
         <h2 class="m-4">เอกสารที่ต้องใช้</h2>
-        <div class="row mb-1">
-          <h3 class="col pe-0">
-            <div class="th p-3">
-              รถมีเล่มทะเบียน
-            </div>
+
+        <div class="col-12 col-md-6 mb-1">
+          <h3 class="th p-3">
+            รถมีเล่มทะเบียน
           </h3>
-          <h3 class="col">
-            <div class="th p-3">
-              รถติดไฟแนนซ์
-            </div>
-          </h3>
-        </div>
-        <div class="row">
-          <div class="col pe-0">
-            <div class="tb p-3">
-              <h5 class="mb-4"><img src="images/circle-check-r.png" class="iconCheck"> เล่มทะเบียนรถ</h5>
-              <h5 class="mb-4"><img src="images/circle-check-r.png" class="iconCheck"> บัตรประชาชน</h5>
-              <h5 class="mb-4"><img src="images/circle-check-r.png" class="iconCheck"> ทะเบียนบ้าน</h5>
-            </div>
+
+          <div class="tb p-3">
+            <h5 class="mb-4"><img src="images/circle-check-r.png" class="iconCheck"> เล่มทะเบียนรถ</h5>
+            <h5 class="mb-4"><img src="images/circle-check-r.png" class="iconCheck"> บัตรประชาชน</h5>
+            <h5 class="mb-4"><img src="images/circle-check-r.png" class="iconCheck"> ทะเบียนบ้าน</h5>
           </div>
-          <div class="col">
-            <div class="tb p-3">
-              <h5 class="mb-4"><img src="images/circle-check-b.png" class="iconCheck"> สัญญาเช่าซื้อที่ทำไว้กับไฟแนนซ์</h5>
-              <h5 class="mb-4"><img src="images/circle-check-b.png" class="iconCheck"> ใบเสร็จค่างวดล่าสุด</h5>
-              <h5 class="mb-4"><img src="images/circle-check-b.png" class="iconCheck"> สำเนาทะเบียนรถ</h5>
-              <h5 class="mb-4"><img src="images/circle-check-b.png" class="iconCheck"> บัตรประชาชน</h5>
-              <h5 class="mb-4"><img src="images/circle-check-b.png" class="iconCheck"> ทะเบียนบ้าน</h5>
-            </div>
+        </div>
+
+        <div class="col-12 col-md-6 mb-1">
+          <h3 class="th p-3">
+            รถติดไฟแนนซ์
+          </h3>
+          
+          <div class="tb p-3">
+            <h5 class="mb-4"><img src="images/circle-check-b.png" class="iconCheck"> สัญญาเช่าซื้อที่ทำไว้กับไฟแนนซ์</h5>
+            <h5 class="mb-4"><img src="images/circle-check-b.png" class="iconCheck"> ใบเสร็จค่างวดล่าสุด</h5>
+            <h5 class="mb-4"><img src="images/circle-check-b.png" class="iconCheck"> สำเนาทะเบียนรถ</h5>
+            <h5 class="mb-4"><img src="images/circle-check-b.png" class="iconCheck"> บัตรประชาชน</h5>
+            <h5 class="mb-4"><img src="images/circle-check-b.png" class="iconCheck"> ทะเบียนบ้าน</h5>
           </div>
         </div>
         <p>
@@ -234,13 +231,62 @@
         <h2 class="m-4">รีวิวจากลูกค้าของเรา</h2>
 
         <section class="review-wrapper p-md-4">
-          <img src="images/review1.png" class="img-fluid img-slide p-1" alt="RubJumNum-review">
-          <img src="images/review2.png" class="img-fluid img-slide p-1" alt="RubJumNum-review">
-          <img src="images/review3.png" class="img-fluid img-slide p-1" alt="RubJumNum-review">
-          <img src="images/review4.png" class="img-fluid img-slide p-1" alt="RubJumNum-review">
-          <img src="images/review5.png" class="img-fluid img-slide p-1" alt="RubJumNum-review">
-          <img src="images/review6.png" class="img-fluid img-slide p-1" alt="RubJumNum-review">
+          <img src="images/review1.png" class="img-fluid img-slide p-1" alt="RubJumNum-review" data-bs-toggle="modal" data-bs-target="#review1">
+          <img src="images/review2.png" class="img-fluid img-slide p-1" alt="RubJumNum-review" data-bs-toggle="modal" data-bs-target="#review2">
+          <img src="images/review3.png" class="img-fluid img-slide p-1" alt="RubJumNum-review" data-bs-toggle="modal" data-bs-target="#review3">
+          <img src="images/review4.png" class="img-fluid img-slide p-1" alt="RubJumNum-review" data-bs-toggle="modal" data-bs-target="#review4">
+          <img src="images/review5.png" class="img-fluid img-slide p-1" alt="RubJumNum-review" data-bs-toggle="modal" data-bs-target="#review5">
+          <img src="images/review6.png" class="img-fluid img-slide p-1" alt="RubJumNum-review" data-bs-toggle="modal" data-bs-target="#review6">
         </section>
+
+        <div class="modal fade" id="review1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content p-2">
+              <button type="button" class="btn-close close-left" data-bs-dismiss="modal" aria-label="Close"></button>
+              <img src="images/review1.png" class="img-fluid" alt="RubJumNum-customer">
+            </div>
+          </div>
+        </div>
+        <div class="modal fade" id="review2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content p-2">
+              <button type="button" class="btn-close close-left" data-bs-dismiss="modal" aria-label="Close"></button>
+              <img src="images/review2.png" class="img-fluid" alt="RubJumNum-customer">
+            </div>
+          </div>
+        </div>
+        <div class="modal fade" id="review3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content p-2">
+              <button type="button" class="btn-close close-left" data-bs-dismiss="modal" aria-label="Close"></button>
+              <img src="images/review3.png" class="img-fluid" alt="RubJumNum-customer">
+            </div>
+          </div>
+        </div>
+        <div class="modal fade" id="review4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content p-2">
+              <button type="button" class="btn-close close-left" data-bs-dismiss="modal" aria-label="Close"></button>
+              <img src="images/review4.png" class="img-fluid" alt="RubJumNum-customer">
+            </div>
+          </div>
+        </div>
+        <div class="modal fade" id="review5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content p-2">
+              <button type="button" class="btn-close close-left" data-bs-dismiss="modal" aria-label="Close"></button>
+              <img src="images/review5.png" class="img-fluid" alt="RubJumNum-customer">
+            </div>
+          </div>
+        </div>
+        <div class="modal fade" id="review6" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content p-2">
+              <button type="button" class="btn-close close-left" data-bs-dismiss="modal" aria-label="Close"></button>
+              <img src="images/review6.png" class="img-fluid" alt="RubJumNum-customer">
+            </div>
+          </div>
+        </div>
 
         <hr class="mt-4">
         <h2 class="m-4">ที่จอดของเรา</h2>
