@@ -1,3 +1,15 @@
+@font-face {
+  font-family: 'db_heaventmed';
+  src: url('./fonts/db_heavent_med_v3.2_0-webfont.eot');
+  src: url('./fonts/db_heavent_med_v3.2_0-webfont.eot?#iefix') format('embedded-opentype'),
+       url('./fonts/db_heavent_med_v3.2_0-webfont.woff2') format('woff2'),
+       url('./fonts/db_heavent_med_v3.2_0-webfont.woff') format('woff'),
+       url('./fonts/db_heavent_med_v3.2_0-webfont.ttf') format('truetype'),
+       url('./fonts/db_heavent_med_v3.2_0-webfont.svg#db_heaventmed') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
   height: 100%;
   margin: 0;
@@ -10,6 +22,80 @@ body {
 footer {
   padding: 1rem;
   background: #123F7A;
+}
+#banner {
+  background: linear-gradient(102.84deg, #A6374C -2.15%, #133F7A 32.08%, #123F7A 65.83%, #C93541 101.52%);
+  position: relative;
+  margin-top: 60px;
+  height: 810px;
+  font-family: 'db_heaventmed';
+  /* text-align: center; */
+}
+#banner-women {
+  z-index: 1;
+  position: absolute;
+  right: 0%;
+  bottom: 0%;
+  height: 90%;
+}
+#banner-car {
+  position: absolute;
+  right: 0%;
+  height: 100%;
+}
+.banner-text {
+  position: absolute;
+  left: 10%;
+  top: 10%;
+  text-align: center;
+  z-index: 1;
+  width: 55%;
+}
+.banner-head-text {
+  font-style: italic;
+  font-size: 103px;
+}
+.btn-light {
+  font-family: 'DB Heavent';
+  border-radius: 100px;
+  color: #1B4076;
+  padding-left: 5%;
+  padding-right: 5%;
+  font-size: 48px;
+  line-height: 58px;
+}
+.banner-text-1 {
+  font-size: 123px;
+  font-weight: 500;
+  line-height: 100px;
+}
+span[data-text] {
+  display:inline-block;
+  font-family: 'DB Heavent';
+  font-weight: 700;
+  font-size: 207px;
+  line-height: 130px;
+  position:relative;
+}
+span[data-text]:before {
+  content:attr(data-text);
+  text-shadow: 0 0 0 white;
+  background: white;
+  -webkit-text-stroke: 3px transparent;    
+  -webkit-background-clip: text;
+  background-clip: text;
+  color:transparent;
+}
+span[data-text]:after {
+  content:attr(data-text);
+  left:0;
+  top:0;
+  position:absolute;
+  background-image: linear-gradient(180deg, #DC3B50 33.06%, #D3353F 69.35%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  text-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
 }
 .th {
   background: rgba(255, 255, 255, 0.2) !important;
@@ -173,6 +259,46 @@ footer {
   top: 3%;
 }
 
+@media only screen and (min-width: 1440px) {
+  .banner-text {
+    left: 4%;
+  }
+}
+@media only screen and (max-width: 1440px) {
+  #banner {
+    max-width: 100% !important;
+  }
+}
+@media only screen and (min-width: 991px) and (max-width: 1280px) {
+  #banner {
+    height: 650px;
+  }
+  .banner-text {
+    left: 5%;
+  }
+  .banner-head-text {
+    font-size: 76px;
+  }
+  .banner-text-1 {
+    font-size: 86px;
+    line-height: 78px;
+  }
+  span[data-text] {
+    font-size: 142px;
+    line-height: 96px;
+    margin-bottom: 5%;
+  }
+  .btn-light {
+    font-size: 36px;
+    line-height: 48px;
+  }
+  .banner-p {
+    font-size: 24px;
+  }
+  #banner-women {
+    height: 80%;
+  }
+}
 @media only screen and (max-width: 991px) {
   .nav-item.active, .nav-item:hover {
     transform: skew(0deg);
@@ -180,6 +306,9 @@ footer {
   .nav-item-phone:before, .nav-item-line:before {
     transform: skew(0deg);
     background: transparent;
+  }
+  #banner {
+    height: 430px;
   }
   .displayMobile {
     display: block;
@@ -196,5 +325,69 @@ footer {
   .iconCheck {
     width: 15px;
     height: 15px;
+  }
+  .banner-head-text {
+    font-size: 56px;
+  }
+  .banner-text-1 {
+    font-size: 64px;
+    line-height: 56px;
+    margin-bottom: 0%;
+  }
+  span[data-text] {
+    font-size: 108px;
+    line-height: 80px;
+    margin-bottom: 0%;
+  }
+  .btn-light {
+    font-size: 24px;
+    line-height: 24px;
+  }
+  .banner-p {
+    font-size: 18px;
+  }
+  #banner-women {
+    height: 85%;
+  }
+}
+@media only screen and (max-width: 625px) {
+  #banner {
+    height: 320px;
+  }
+  .banner-text {
+    left: 2%;
+    width: 50%;
+  }
+  .banner-head-text {
+    font-size: 28px;
+  }
+  .banner-text-1 {
+    font-size: 36px;
+    line-height: 30px;
+  }
+  span[data-text] {
+    font-size: 64px;
+    line-height: 60px;
+  }
+  .btn-light {
+    font-size: 16px;
+    line-height: 16px;
+  }
+  .banner-p {
+    font-size: 14px;
+  }
+  #banner-women {
+    height: 85%;
+  }
+  .tb {
+    padding-left: 20% !important;
+  }
+}
+@media only screen and (max-width: 375px) {
+  .banner-text {
+    width: 70%;
+  }
+  #banner-women {
+    height: 55%;
   }
 }
